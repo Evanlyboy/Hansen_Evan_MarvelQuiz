@@ -6,4 +6,4 @@ characterCount = {
 	"Carnage": 0
 }
 
-question = ["How did your character's power manifest? Latent or Acquired: ", "What is your character's temperament: Calm or Erratic? : ", "Does your character have a good social life? Yes or No: ", "What does your character fight for? Good or Bad: "]
+question = ["How did your powers manifest? Latent or Acquired: ", "What is your temperament: Calm or Erratic? : ", "Do you have lots of friends? Yes or No: ", "What do you fight for? Good or Bad: "]

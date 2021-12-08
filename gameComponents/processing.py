@@ -1,5 +1,6 @@
 from gameComponents import characters
 
+#Determines what the answer was from the current question and then adds points to the appropriate character
 def questionSort(answer):
 	if answer == "good":
 		characters.characterCount["Spider-Man"] += 1
@@ -26,7 +27,7 @@ def questionSort(answer):
 	elif answer == "latent":
 		characters.characterCount["Cyclops"] += 1
 
-
+#Kills every item from the dictionary aside from the one with the most points i.e the most likely winner
 def probabilityAnalyser(maxValue):
 	maxValue = 0
 	if characters.characterCount["Spider-Man"] >= maxValue:
@@ -34,7 +35,6 @@ def probabilityAnalyser(maxValue):
 	else:
 		characters.characterCount.pop("Spider-Man")
 	
-	print(maxValue)
 	if characters.characterCount["Cyclops"] >= maxValue:
 		maxValue = characters.characterCount["Cyclops"]
 	else:
