@@ -17,8 +17,9 @@ for x in range(4):
 	print(numberSequence[x])
 	currentQuestion = input(characters.question[numberSequence[x]])
 	processing.questionSort(currentQuestion)
+	print(characters.characterCount)
 
 
 #Sort the character count from most to least
-characters.characterCount.sort()
-print("Your character is " + characters.characterCount(0))
+mostPoints = list(characters.characterCount.values())
+print("Your character is " + characters.characterCount)
