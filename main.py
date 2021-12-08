@@ -11,7 +11,14 @@ numberSequence = [0, 1, 2, 3]
 random.shuffle(numberSequence)
 print(numberSequence)
 
-
 for x in range(4):
 	pass
-	#questionAsk = 
+	#Asks the question in a random order
+	print(numberSequence[x])
+	currentQuestion = input(characters.question[numberSequence[x]])
+	processing.questionSort(currentQuestion)
+
+
+#Sort the character count from most to least
+characters.characterCount.sort()
+print("Your character is " + characters.characterCount(0))
