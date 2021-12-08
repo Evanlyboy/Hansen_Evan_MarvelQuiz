@@ -2,50 +2,52 @@ from gameComponents import characters
 
 def questionSort(answer):
 	if answer == "good":
-		characters.spider += 1
-		characters.cyclops += 1
+		characters.characterCount["Spider-Man"] += 1
+		characters.characterCount["Cyclops"] += 1
 	elif answer == "bad":
-		characters.mysterio += 1
-		characters.carnage += 1
+		characters.characterCount["Mysterio"] += 1
+		characters.characterCount["Carnage"] += 1
 	elif answer == "yes":
-		characters.spider += 1
-		characters.cyclops += 1
+		characters.characterCount["Spider-Man"] += 1
+		characters.characterCount["Cyclops"] += 1
 	elif answer == "no":
-		characters.mysterio += 1
-		characters.carnage += 1
+		characters.characterCount["Mysterio"] += 1
+		characters.characterCount["Carnage"] += 1
 	elif answer == "calm":
-		characters.spider += 1
-		characters.mysterio += 1
+		characters.characterCount["Spider-Man"] += 1
+		characters.characterCount["Mysterio"] += 1
 	elif answer == "erratic":
-		characters.cyclops += 1
-		characters.carnage += 1
+		characters.characterCount["Cyclops"] += 1
+		characters.characterCount["Carnage"] += 1
 	elif answer == "acquired":
-		characters.spider += 1
-		characters.mysterio += 1
-		characters.carnage += 1
+		characters.characterCount["Spider-Man"] += 1
+		characters.characterCount["Mysterio"] += 1
+		characters.characterCount["Carnage"] += 1
 	elif answer == "latent":
-		characters.cyclops += 1
+		characters.characterCount["Cyclops"] += 1
 
 
 def probabilityAnalyser(maxValue):
-	if characters.characterCount["spider"] >= maxValue:
-		maxValue = characters.characterCount["spider"]
-	elif
-		characters.characterCount.pop("spider")
+	maxValue = 0
+	if characters.characterCount["Spider-Man"] >= maxValue:
+		maxValue = characters.characterCount["Spider-Man"]
+	else:
+		characters.characterCount.pop("Spider-Man")
 	
-	if characters.characterCount["cyclops"] >= maxValue:
-		maxValue = characters.characterCount["cyclops"]
-	elif
-		characters.characterCount.pop("cyclops")
+	print(maxValue)
+	if characters.characterCount["Cyclops"] >= maxValue:
+		maxValue = characters.characterCount["Cyclops"]
+	else:
+		characters.characterCount.pop("Cyclops")
 
-	if characters.characterCount["mysterio"] >= maxValue:
-		maxValue = characters.characterCount["mysterio"]
-	elif
-		characters.characterCount.pop("mysterio")
+	if characters.characterCount["Mysterio"] >= maxValue:
+		maxValue = characters.characterCount["Mysterio"]
+	else:
+		characters.characterCount.pop("Mysterio")
 
-	if characters.characterCount["carnage"] >= maxValue:
-		maxValue = characters.characterCount["carnage"]
-	elif
-		characters.characterCount.pop("carnage")
+	if characters.characterCount["Carnage"] >= maxValue:
+		maxValue = characters.characterCount["Carnage"]
+	else:
+		characters.characterCount.pop("Carnage")
 
-	print(characterCount.keys())
+	#print(characters.characterCount.values())

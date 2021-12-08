@@ -14,24 +14,16 @@ print(numberSequence)
 for x in range(4):
 	pass
 	#Asks the question in a random order
-	print(numberSequence[x])
 	currentQuestion = input(characters.question[numberSequence[x]])
 	processing.questionSort(currentQuestion)
-	print(characters.spider)
-	print(characters.cyclops)
-	print(characters.mysterio)
-	print(characters.carnage)
 
 #Sort the character count from most to least
 maxValue = 0
 processing.probabilityAnalyser(maxValue)
-#for x in range(4):
-	#if characters.characterCount[x] >= maxValue:
-		#maxValue = characters.characterCount[x]
-	#else:
-		#maxValue = maxValue
-		#characters.characterCount
 
-print(maxValue)
+#If there is more than one character left in the list somehow, randomly get rid of one to have one character to present to the player
+if len(characters.characterCount) > 1:
+	characters.characterCount.popitem()
 
-print("Your character is " + characters.characterCount.keys())
+for key, value in characters.characterCount.items() :
+    print ("Your character is " + key)
