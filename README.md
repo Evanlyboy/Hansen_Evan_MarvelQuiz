@@ -1,6 +1,3 @@
-# Hansen_Evan_MarvelQuiz
-A Marvel Quiz from the mind of Evan. Very nice and also cool
-
 <h1> Evan's Marvel Quiz </h1>
 
 Who are you? We shall soon find out. Play one of four characters Marvel characters.
