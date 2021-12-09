@@ -38,7 +38,7 @@ processing.probabilityAnalyser(maxValue)
 #If there is more than one character left in the list somehow, randomly get rid of one to have one character to present to the player
 if len(characters.characterCount) > 1:
 	randomNum = randint(0,1)
-	if randomNum = 0:
+	if randomNum == 0:
 	characters.characterCount.popitem()
 
 for key, value in characters.characterCount.items() :
