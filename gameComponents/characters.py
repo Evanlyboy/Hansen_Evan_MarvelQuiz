@@ -1,18 +1,16 @@
 #For initalizing our characters and questions
-#spider = ["acquired", "calm", "social", "good"]
+#spider = ["latent", "calm", "social", "good"]
 #cyclops = ["latent", "erratic", "social", "good"]
 #mysterio = ["aquired", "calm", "isolated", "bad"]
 #carnage = ["acquired", "erratic", "isolated", "bad"]
 
 #spider, cyclops, mysterio, carnage
 characterCount = {
-	
 	"spider": 0,
 	"cyclops": 0,
 	"mysterio": 0,
 	"carnage": 0
 }
-
 
 spider = 0
 cyclops = 0
