@@ -37,16 +37,22 @@ def probabilityAnalyser(maxValue):
 	
 	if characters.characterCount["Cyclops"] >= maxValue:
 		maxValue = characters.characterCount["Cyclops"]
+		characters.characterCount.pop()[0]
 	else:
 		characters.characterCount.pop("Cyclops")
 
 	if characters.characterCount["Mysterio"] >= maxValue:
 		maxValue = characters.characterCount["Mysterio"]
+		characters.characterCount.pop()[0]
+		characters.characterCount.pop()[1]
 	else:
 		characters.characterCount.pop("Mysterio")
 
 	if characters.characterCount["Carnage"] >= maxValue:
 		maxValue = characters.characterCount["Carnage"]
+		characters.characterCount.pop()[0]
+		characters.characterCount.pop()[1]
+		characters.characterCount.pop()[2]
 	else:
 		characters.characterCount.pop("Carnage")
 

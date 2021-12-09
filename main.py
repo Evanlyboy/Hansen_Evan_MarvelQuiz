@@ -27,7 +27,6 @@ for x in range(4):
 	processing.questionSort(currentQuestion)
 	print("")
 	time.sleep(2)
-	print(characters.characterCount)
 
 
 
