@@ -7,10 +7,12 @@ import time
 
 print("------> Welcome to Evan's Marvel Quiz <------")
 print("You there...in the shadows...I cannot see before me but I sense your presence. Who are you?")
-time.sleep(6)
-print("I cannot see nor hear but I can read your mind. Tell me...")
+time.sleep(2)
+print("...")
+time.sleep(2)
+print("Ah, I cannot see nor hear. But I can read your mind. Tell me...")
 print("")
-time.sleep(5)
+time.sleep(3)
 #generate our random sequence for questioning
 #Generating a number sequence
 numberSequence = [0, 1, 2, 3]
@@ -25,6 +27,7 @@ for x in range(4):
 	processing.questionSort(currentQuestion)
 	print("")
 	time.sleep(2)
+	print(characters.characterCount)
 
 
 
@@ -34,6 +37,8 @@ processing.probabilityAnalyser(maxValue)
 
 #If there is more than one character left in the list somehow, randomly get rid of one to have one character to present to the player
 if len(characters.characterCount) > 1:
+	randomNum = randint(0,1)
+	if randomNum = 0:
 	characters.characterCount.popitem()
 
 for key, value in characters.characterCount.items() :
