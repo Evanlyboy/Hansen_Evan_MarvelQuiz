@@ -11,7 +11,7 @@ Clone the project, <code>cd</code> to your directory/download, and run the main.
 
 ### Rules
 
-Yype every answer in lower case or else it won't work
+Type every answer in lower case or else it won't work
 
 Built with <a href="https://www.python.org/doc/" rel="nofollow">Python 3</a>
 
